@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B2007E3-3671-430A-B377-5DCD84209373}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OpenGL_2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib\GL;$(LibraryPath);$(ProjectDir)GL</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)DLL\*.dll" "$(ProjectDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\CCQuad.cpp" />
+    <ClCompile Include="Common\common.cpp" />
+    <ClCompile Include="Common\CQuad.cpp" />
+    <ClCompile Include="Common\CQuadEX1.cpp" />
+    <ClCompile Include="Common\CQuadEX2B.cpp" />
+    <ClCompile Include="Common\CShape.cpp" />
+    <ClCompile Include="Common\Timer.cpp" />
+    <ClCompile Include="InitShader.cpp" />
+    <ClCompile Include="Midtern\Background.cpp" />
+    <ClCompile Include="Midtern\BigEnemy.cpp" />
+    <ClCompile Include="Midtern\Boss.cpp" />
+    <ClCompile Include="Midtern\BossAdvanceState.cpp" />
+    <ClCompile Include="Midtern\BossAShape.cpp" />
+    <ClCompile Include="Midtern\BossBulletShape.cpp" />
+    <ClCompile Include="Midtern\BossFinalState.cpp" />
+    <ClCompile Include="Midtern\BossFShape.cpp" />
+    <ClCompile Include="Midtern\BossNShape.cpp" />
+    <ClCompile Include="Midtern\BossNormalState.cpp" />
+    <ClCompile Include="Midtern\Bullet.cpp" />
+    <ClCompile Include="Midtern\BulletManager.cpp" />
+    <ClCompile Include="Midtern\Character.cpp" />
+    <ClCompile Include="Midtern\Collider.cpp" />
+    <ClCompile Include="Midtern\CurveEnemy.cpp" />
+    <ClCompile Include="Midtern\Enemy.cpp" />
+    <ClCompile Include="Midtern\EnemyController.cpp" />
+    <ClCompile Include="Midtern\InputManager.cpp" />
+    <ClCompile Include="Midtern\main.cpp" />
+    <ClCompile Include="Midtern\NormalBulletShape.cpp" />
+    <ClCompile Include="Midtern\NormalEnemyShapeA.cpp" />
+    <ClCompile Include="Midtern\NormalEnemyShapeB.cpp" />
+    <ClCompile Include="Midtern\Player.cpp" />
+    <ClCompile Include="Midtern\PlayerShapeA.cpp" />
+    <ClCompile Include="Midtern\PlayerShapeB.cpp" />
+    <ClCompile Include="Midtern\PlayerShapeC.cpp" />
+    <ClCompile Include="Midtern\Random.cpp" />
+    <ClCompile Include="Midtern\RoundBulletShape.cpp" />
+    <ClCompile Include="Midtern\Shape.cpp" />
+    <ClCompile Include="Midtern\Shield.cpp" />
+    <ClCompile Include="Midtern\ShieldShape.cpp" />
+    <ClCompile Include="Midtern\State.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\CCQuad.h" />
+    <ClInclude Include="Common\CQuad.h" />
+    <ClInclude Include="Common\CQuadEX1.h" />
+    <ClInclude Include="Common\CQuadEX2B.h" />
+    <ClInclude Include="Common\CShape.h" />
+    <ClInclude Include="Common\Timer.h" />
+    <ClInclude Include="Header\Angel.h" />
+    <ClInclude Include="Header\CheckError.h" />
+    <ClInclude Include="Header\mat.h" />
+    <ClInclude Include="Header\vec.h" />
+    <ClInclude Include="Midtern\Background.h" />
+    <ClInclude Include="Midtern\BigEnemy.h" />
+    <ClInclude Include="Midtern\Boss.h" />
+    <ClInclude Include="Midtern\BossAdvanceState.h" />
+    <ClInclude Include="Midtern\BossAShape.h" />
+    <ClInclude Include="Midtern\BossBulletShape.h" />
+    <ClInclude Include="Midtern\BossFinalState.h" />
+    <ClInclude Include="Midtern\BossFShape.h" />
+    <ClInclude Include="Midtern\BossNormalState.h" />
+    <ClInclude Include="Midtern\BossNShape.h" />
+    <ClInclude Include="Midtern\Bullet.h" />
+    <ClInclude Include="Midtern\BulletManager.h" />
+    <ClInclude Include="Midtern\Character.h" />
+    <ClInclude Include="Midtern\Collider.h" />
+    <ClInclude Include="Midtern\CurveEnemy.h" />
+    <ClInclude Include="Midtern\Enemy.h" />
+    <ClInclude Include="Midtern\EnemyController.h" />
+    <ClInclude Include="Midtern\Enum.h" />
+    <ClInclude Include="Midtern\InputManager.h" />
+    <ClInclude Include="Midtern\NormalBulletShape.h" />
+    <ClInclude Include="Midtern\NormalEnemyShapeA.h" />
+    <ClInclude Include="Midtern\NormalEnemyShapeB.h" />
+    <ClInclude Include="Midtern\ObjectPool.h" />
+    <ClInclude Include="Midtern\Player.h" />
+    <ClInclude Include="Midtern\PlayerShapeA.h" />
+    <ClInclude Include="Midtern\PlayerShapeB.h" />
+    <ClInclude Include="Midtern\PlayerShapeC.h" />
+    <ClInclude Include="Midtern\Random.h" />
+    <ClInclude Include="Midtern\RoundBulletShape.h" />
+    <ClInclude Include="Midtern\Shape.h" />
+    <ClInclude Include="Midtern\Shield.h" />
+    <ClInclude Include="Midtern\ShieldShape.h" />
+    <ClInclude Include="Midtern\State.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fsVtxColor.glsl" />
+    <None Include="vsVtxColor.glsl" />
+    <None Include="vsVtxColorEX2.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

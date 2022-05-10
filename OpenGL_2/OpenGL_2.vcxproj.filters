@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{a3a13fbf-12e6-40b6-b6be-8380c0a38d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\Shader">
+      <UniqueIdentifier>{c0f375a0-d333-4a53-b814-87fb1e9c0a36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Midtern">
+      <UniqueIdentifier>{fac3f0c8-6c06-4343-a719-8be8e8e75396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Midtern\Component">
+      <UniqueIdentifier>{b6b3831f-df17-4677-9303-12ba0e7eba3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Midtern\Shapes">
+      <UniqueIdentifier>{d5a0ff98-7f12-4224-a282-2e586e79412e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Midtern\Character">
+      <UniqueIdentifier>{9c7a8673-e20b-4069-a4a6-e17228f15a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Midtern\Bullet">
+      <UniqueIdentifier>{ed55d627-2dac-445e-829c-df350d6882af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Midtern\StateMachine">
+      <UniqueIdentifier>{38050871-1862-4b95-a1a5-8685e7f1bdc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Midtern\Character\EnemyType">
+      <UniqueIdentifier>{ebc3294d-1477-4c09-9b33-971cd933a6a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InitShader.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Timer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CQuad.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CQuadEX1.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CQuadEX2B.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CShape.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CCQuad.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\main.cpp">
+      <Filter>Midtern</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\InputManager.cpp">
+      <Filter>Midtern</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Shape.cpp">
+      <Filter>Midtern\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Collider.cpp">
+      <Filter>Midtern\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\PlayerShapeA.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Character.cpp">
+      <Filter>Midtern\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Player.cpp">
+      <Filter>Midtern\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\NormalEnemyShapeA.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Bullet.cpp">
+      <Filter>Midtern\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BulletManager.cpp">
+      <Filter>Midtern\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\NormalBulletShape.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\EnemyController.cpp">
+      <Filter>Midtern\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\State.cpp">
+      <Filter>Midtern\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Random.cpp">
+      <Filter>Midtern</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\RoundBulletShape.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\CurveEnemy.cpp">
+      <Filter>Midtern\Character\EnemyType</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\PlayerShapeB.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\PlayerShapeC.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BigEnemy.cpp">
+      <Filter>Midtern\Character\EnemyType</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Enemy.cpp">
+      <Filter>Midtern\Character\EnemyType</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Boss.cpp">
+      <Filter>Midtern\Character\EnemyType</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BossNormalState.cpp">
+      <Filter>Midtern\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BossAdvanceState.cpp">
+      <Filter>Midtern\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BossNShape.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BossBulletShape.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BossAShape.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BossFinalState.cpp">
+      <Filter>Midtern\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Shield.cpp">
+      <Filter>Midtern\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\ShieldShape.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\BossFShape.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\Background.cpp">
+      <Filter>Midtern</Filter>
+    </ClCompile>
+    <ClCompile Include="Midtern\NormalEnemyShapeB.cpp">
+      <Filter>Midtern\Shapes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Angel.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\CheckError.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\mat.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\vec.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Timer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CQuad.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CQuadEX1.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CQuadEX2B.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CShape.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CCQuad.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\InputManager.h">
+      <Filter>Midtern</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Shape.h">
+      <Filter>Midtern\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Collider.h">
+      <Filter>Midtern\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\PlayerShapeA.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Character.h">
+      <Filter>Midtern\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Player.h">
+      <Filter>Midtern\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\NormalEnemyShapeA.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Bullet.h">
+      <Filter>Midtern\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BulletManager.h">
+      <Filter>Midtern\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\ObjectPool.h">
+      <Filter>Midtern\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\NormalBulletShape.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\EnemyController.h">
+      <Filter>Midtern\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Enum.h">
+      <Filter>Midtern</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\State.h">
+      <Filter>Midtern\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Random.h">
+      <Filter>Midtern</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\CurveEnemy.h">
+      <Filter>Midtern\Character\EnemyType</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\RoundBulletShape.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\PlayerShapeB.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\PlayerShapeC.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BigEnemy.h">
+      <Filter>Midtern\Character\EnemyType</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Enemy.h">
+      <Filter>Midtern\Character\EnemyType</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Boss.h">
+      <Filter>Midtern\Character\EnemyType</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BossNormalState.h">
+      <Filter>Midtern\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BossAdvanceState.h">
+      <Filter>Midtern\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BossNShape.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BossBulletShape.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BossAShape.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BossFinalState.h">
+      <Filter>Midtern\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Shield.h">
+      <Filter>Midtern\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\ShieldShape.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\BossFShape.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\Background.h">
+      <Filter>Midtern</Filter>
+    </ClInclude>
+    <ClInclude Include="Midtern\NormalEnemyShapeB.h">
+      <Filter>Midtern\Shapes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fsVtxColor.glsl">
+      <Filter>原始程式檔\Shader</Filter>
+    </None>
+    <None Include="vsVtxColor.glsl">
+      <Filter>原始程式檔\Shader</Filter>
+    </None>
+    <None Include="vsVtxColorEX2.glsl">
+      <Filter>原始程式檔\Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
